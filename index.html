@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Focus Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Focus Timer</h1>
+  <select id="session">
+    <option value="40-10">40 min Work / 10 min Break</option>
+    <option value="60-20">1 hr Work / 20 min Break</option>
+    <option value="30-5">30 min Work / 5 min Break</option>
+  </select>
+
+  <br />
+  <button onclick="startTimer()">Start</button>
+  <button id="pauseBtn" onclick="pauseTimer()">Pause</button>
+  <button onclick="resetTimer()">Reset</button>
+
+  <div class="timer" id="display">00:00</div>
+
+  <audio id="focusMusic" loop src="focus-music.mp3"></audio>
+  <audio id="breakMusic" loop src="break-music.mp3"></audio>
+  <audio id="beep" src="beep.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    margin: 32px;
+    padding: 0;
+    background-color: #ff88a5;
+    color: #ffffff;
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Top-left panel */
+  #top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* Heading */
+  #top-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  /* Underlined select */
+  #top-left select {
+    appearance: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    font-size: 1rem;
+    padding: 6px 4px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  /* Outline buttons */
+  #top-left button {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 8px 14px;
+    font-size: 1rem;
+    margin: 5px 5px 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+  }
+  
+  #top-left button:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Horizontal line below form */
+  #top-left::after {
+    content: "";
+    display: block;
+    width: 100vw;
+    border-bottom: 2px solid #ffffff;
+    margin-top: 15px;
+  }
+  
+  /* Gigantic timer */
+  .timer {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 300px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+
+  
